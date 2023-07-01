@@ -3,6 +3,8 @@ import { logger } from './utils/logger';
 import { DailySchedule, MonthlySchedule, TMeridiemBasis, TMonthlyBasis, TNadSchedule, TTimeBasis, TYearlyBasis, YearlySchedule } from './types';
 import { expressions } from './constants';
 
+export * from './types'
+
 type TSchedulesWithExpression = {
   name:string,
   basis:string,
@@ -113,9 +115,9 @@ export class NadScheduler {
   private logRegisteredSchedules = (schedules: TSchedulesWithExpression[]) => {
     logger.info(`Registered Schedules :`);
     if(schedules.length){
-      console.table(schedules,[...Object.keys(schedules[0])]);
+      logger.table(schedules,[...Object.keys(schedules[0])]);
     }else{
-      console.table([],[])
+      logger.table([],[])
     }
   };
 
