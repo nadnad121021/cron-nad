@@ -1,11 +1,19 @@
 {
   "name": "cron-nad",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A simple package to used node-cron in simplier way",
   "main": "dist/src/cron-nad.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nadnad121021/cron-nad.git"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "cron",
     "scheduler",
@@ -19,9 +27,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.3.2",
-    "typescript": "^5.1.6",
-    "winston": "^3.9.0",
-    "winston-daily-rotate-file": "^4.7.1"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "@types/node-cron": "^3.0.8",
