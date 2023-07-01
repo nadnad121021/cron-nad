@@ -1,12 +1,12 @@
 {
   "name": "cron-nad",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A simple package to used node-cron in simplier way",
-  "main": "dist/cron-nad.js",
-  "types":"dist",
+  "main": "dist/index.js",
+  "types":"dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p ."
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
