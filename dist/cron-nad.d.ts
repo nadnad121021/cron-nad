@@ -1,5 +1,4 @@
 import { TNadSchedule } from './types';
-export * from './types';
 export declare class NadScheduler {
     private schedules;
     constructor(options: TNadSchedule[]);

@@ -1,5 +1,5 @@
 declare const logger: {
-    info: (str: any) => void;
+    info: (str: string) => void;
     table: (data: any[], columns: string[]) => void;
 };
 export { logger };
