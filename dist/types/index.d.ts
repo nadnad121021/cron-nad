@@ -67,4 +67,4 @@ export type DailySchedule = NonNullable<DailyWithFrenquent | DailyWithTime>;
 export type MonthlySchedule = NonNullable<MonthlyWithFrenquent | MonthyWithTime>;
 export type YearlySchedule = NonNullable<YearlyWithFrenquent | YearlyWithTime>;
 export {};
-//# sourceMappingURL=types.d.ts.map
+//# sourceMappingURL=index.d.ts.map

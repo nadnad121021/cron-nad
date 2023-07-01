@@ -1,5 +1,5 @@
 import { TNadSchedule } from './types';
-export declare class NadScheduler {
+declare class NadScheduler {
     private schedules;
     constructor(options: TNadSchedule[]);
     private generateExpression;
@@ -10,4 +10,5 @@ export declare class NadScheduler {
     private logRegisteredSchedules;
     run(): void;
 }
+export { NadScheduler };
 //# sourceMappingURL=cron-nad.d.ts.map
