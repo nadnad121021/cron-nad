@@ -1,0 +1,30 @@
+{
+  "name": "cron-nad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/cron-nad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cron",
+    "scheduler",
+    "schedule",
+    "task",
+    "job",
+    "cron-nad",
+    "nad"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "typescript": "^5.1.6",
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "dependencies": {
+    "@types/node-cron": "^3.0.8",
+    "node-cron": "^3.0.2"
+  }
+}
