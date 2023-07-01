@@ -1,6 +1,6 @@
 {
   "name": "cron-nad",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A simple package to used node-cron in simplier way",
   "main": "dist/cron-nad.js",
   "types":"dist",
