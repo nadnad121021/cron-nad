@@ -1,5 +1,5 @@
-import { NadScheduler } from "../src/cron-nad";
-import { TTaskSchedule } from "../src/types";
+import { NadScheduler } from "../cron-nad";
+import { TTaskSchedule } from "../types";
 
 // EX. for minutes basis
 const scheduleMinutes:TTaskSchedule = {

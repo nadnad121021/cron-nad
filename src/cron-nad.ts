@@ -16,7 +16,7 @@ type TSchedulesWithExpression = {
   callback:()=>void
 }
 
-export class NadScheduler {
+ class NadScheduler {
   private schedules: TSchedulesWithExpression[] = [];
   constructor(options: TNadSchedule[]) {
     this.schedules = this.generateSchedulesWithExpression(options);
@@ -163,3 +163,5 @@ export class NadScheduler {
     });
   }
 }
+
+export { NadScheduler}
