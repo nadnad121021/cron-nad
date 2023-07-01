@@ -3,8 +3,6 @@ import { logger } from './utils/logger';
 import { DailySchedule, MonthlySchedule, TMeridiemBasis, TMonthlyBasis, TNadSchedule, TTimeBasis, TYearlyBasis, YearlySchedule } from './types';
 import { expressions } from './constants';
 
-export * from './types'
-
 type TSchedulesWithExpression = {
   name:string,
   basis:string,
@@ -100,13 +98,13 @@ export class NadScheduler {
     return schedulesArray
   }
 
-  private isLastDayOfMonth = (date): boolean => {
+  private isLastDayOfMonth = (date:Date): boolean => {
     const nextDay = new Date(date);
     nextDay.setDate(nextDay.getDate() + 1);
     return nextDay.getDate() === 1;
   };
 
-  private isLastDayOfYear = (date): boolean => {
+  private isLastDayOfYear = (date:Date): boolean => {
     const nextDay = new Date(date);
     nextDay.setDate(nextDay.getDate() + 1);
     return nextDay.getMonth() === 0 && nextDay.getDate() === 1;

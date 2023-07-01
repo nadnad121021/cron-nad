@@ -1,6 +1,6 @@
 
 const logger = {
-  info:(str)=>{
+  info:(str:string)=>{
     console.info(`${dateFormatter(new Date())} :[cron-nad] Info: ${str}`)
   },
   table:(data:any[],columns:string[])=>{
